@@ -226,12 +226,3 @@ vehicle-ads-dashboard/
 ├── requirements.txt       # Dependências Python
 ├── README.md             # Documentação em inglês
 └── LEIAME.md             # Este arquivo
-```
-
-### 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para submeter um Pull Request.
-
-### 📄 Licença
-
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para detalhes.
