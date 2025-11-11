@@ -235,11 +235,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para submeter um Pull Reque
 ### 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para detalhes.
-
----
-
-<div align="center">
-
-**Desenvolvido com ❤️ usando Streamlit**
-
-</div>
