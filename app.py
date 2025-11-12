@@ -66,8 +66,21 @@ combined_data = pd.concat([data_manuf1.assign(manufacturer=manuf1), data_manuf2.
 
 # Plot price distribution as histogram
 if not combined_data.empty:
-    fig_price = px.histogram(combined_data, x='price', color='manufacturer', marginal='box',
-                             title=f"Price Distribution: {manuf1} vs {manuf2}", barmode='overlay', opacity=0.75)
+    # Define distinct colors for each manufacturer
+    color_map = {
+        manuf1: '#FF6347',  # Tomato red for manufacturer 1
+        manuf2: '#4682B4'   # Steel blue for manufacturer 2
+    }
+    fig_price = px.histogram(
+        combined_data,
+        x='price',
+        color='manufacturer',
+        marginal='box',
+        title=f"Price Distribution: {manuf1} vs {manuf2}",
+        barmode='overlay',
+        opacity=0.5,  # Reduced opacity for better overlap visibility
+        color_discrete_map=color_map  # Assign custom colors
+    )
     st.plotly_chart(fig_price, use_container_width=True)
 else:
     st.write("No data available for the selected manufacturers.")
